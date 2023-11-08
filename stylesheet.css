@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+    padding: 0px;
+    margin: 0px;
+    color: #dfdfff;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    color: #afafef;
+    text-decoration: underline;
+    text-decoration-color: #6060ee;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    font-weight: 200;
+}
+
+/* Navbar */
+
+#navbar {
+    height: 10vh;
+    background-color: #000010;
+    user-select: none;
+}
+
+#navlinks {
+    text-align: right;
+}
+
+.navlink {
+    color: #dfdfff;
+    text-decoration: none;
+    padding: 0px 15px;
+    margin: 0px 10px;
+}
+
+.navlink:hover {
+    text-decoration: underline;
+    text-decoration-color: #6060ee;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    cursor: pointer;
+}
+
+.navlink-active {
+    text-decoration: underline;
+    text-decoration-color: #4444ce;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+/* Main Content */
+
+#main-content {
+    height: 90vh;
+    background-color: #000025;
+}
+
+.section {
+    width: 100%;
+}
