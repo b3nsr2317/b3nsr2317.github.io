@@ -23,17 +23,39 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div id="navbar" class="row">
-                <h1 class="col-xs-12 col-md-4 align-self-center">
-                    Ben Robertson
-                </h1>
-                <div id="navlinks" class="col-md-8 align-self-center">
-                    <a href="../" class="navlink">Home</a>
-                    <a href="#" class="navlink navlink-active">Projects</a>
-                    <a href="../education/" class="navlink">Education</a>
-                    <a href="../contact/" class="navlink">Contact Me</a>
+            <nav class="row navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <h1 class="align-self-center">Ben Robertson</h1>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon navbar-dark"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarNavAltMarkup"
+                    >
+                        <div class="ms-auto navbar-nav">
+                            <a href="../" class="nav-link">Home</a>
+                            <a href="#" class="nav-link navlink-active"
+                                >Projects</a
+                            >
+                            <a href="../education/" class="nav-link"
+                                >Education</a
+                            >
+                            <a href="../contact/" class="nav-link"
+                                >Contact Me</a
+                            >
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </nav>
             <div id="main-content" class="row overflow-auto"></div>
         </div>
         <!-- Bootstrap Import -->

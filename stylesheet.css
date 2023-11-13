@@ -2,6 +2,7 @@ body {
     padding: 0px;
     margin: 0px;
     color: #dfdfff;
+    background-color: #000025;
     font-family: "Inter", sans-serif;
     font-weight: 300;
 }
@@ -17,25 +18,23 @@ h1 {
 
 /* Navbar */
 
-#navbar {
+.navbar {
     height: 10vh;
+    min-height: 70px;
     background-color: #000010;
     user-select: none;
 }
 
-#navlinks {
-    text-align: right;
-}
-
-.navlink {
+.nav-link {
     color: #dfdfff;
     text-decoration: none;
     padding: 0px 15px;
     margin: 0px 10px;
 }
 
-.navlink:hover {
+.nav-link:hover {
     text-decoration: underline;
+    color: #dfdfff;
     text-decoration-color: #6060ee;
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
@@ -49,10 +48,21 @@ h1 {
     text-underline-offset: 6px;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-nav {
+        background-color: #000010;
+        padding-bottom: 10px;
+    }
+}
+
 /* Main Content */
 
 #main-content {
-    height: 90vh;
+    min-height: 90vh;
     background-color: #000025;
 }
 
