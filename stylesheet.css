@@ -63,8 +63,27 @@ h1 {
 #main-content {
     min-height: 90vh;
     background-color: #000025;
+    padding: 10px;
 }
 
 .section {
     width: 100%;
+}
+
+/* Contact Me */
+
+.contactLink {
+    border-radius: 10px;
+    background-color: #4444ce;
+    color: #dfdfff;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.contactLink:hover {
+    text-decoration: underline;
+    text-decoration-color: #4444ce;
+    text-decoration-thickness: 2px;
 }
