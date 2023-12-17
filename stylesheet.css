@@ -97,8 +97,9 @@ a:active {
 }
 
 .contactLink:hover {
+    color: #dfdfff;
     text-decoration: underline;
-    text-decoration-color: #4444ce;
+    text-decoration-color: #222266;
     text-decoration-thickness: 2px;
 }
 
