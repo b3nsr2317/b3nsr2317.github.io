@@ -61,20 +61,23 @@
             <!-- Page content -->
             <div id="main-content" class="row overflow-auto">
                 <div class="col container-fluid">
-                    <!-- <div class="row">
+                    <div class="row">
                         <a
-                            href="mailto:ben.robertson@gmail.com"
+                            href=""
                             class="contactLink mx-auto col-xs-12 col-md-6 col-lg-3"
-                            >Send me an email
+                            id="mailLink"
+                            >Use a browser with JavaScript support to access
+                            email address
                         </a>
                     </div>
                     <div class="row">
                         <a
                             href="linked.in"
                             class="contactLink mx-auto col-xs-12 col-md-6 col-lg-3"
+                            id="linkedInLink"
                             >Reach me on LinkedIn
                         </a>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,6 +90,17 @@
         </div>
         <!-- JS import -->
         <script src="../index.js"></script>
+        <!-- Obfuscate Script -->
+        <script>
+            // Do not include email address if JS not enabled
+            let mail =
+                "JiMxMDk7JiMwOTc7JiMxMDU7JiMxMDg7JiMxMTY7JiMxMTE7OiYjMDk4OyYjMTAxOyYjMTEwOyYjMDQ2OyYjMTE0OyYjMTExOyYjMDk4OyYjMTAxOyYjMTE0OyYjMTE2OyYjMTE1OyYjMTExOyYjMTEwOyYjMDQ4OyYjMDUyOyYjMDY0OyYjMTAzOyYjMTA5OyYjMDk3OyYjMTA1OyYjMTA4OyYjMDQ2OyYjMDk5OyYjMTExOyYjMTA5Ow===";
+            let mailElement = document.getElementById("mailLink");
+            mailElement.href = atob(
+                "bWFpbHRvOmJlbi5yb2JlcnRzb24wNEBnbWFpbC5jb20="
+            );
+            mailElement.innerHTML = "Send me an email";
+        </script>
         <!-- Bootstrap Import -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
