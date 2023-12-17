@@ -69,7 +69,7 @@ function expandHeight(finalHeight, increment, element) {
 }
 
 footer.addEventListener("mouseenter", () => {
-    expandHeight(footerHeight + 50, 10, footer);
+    expandHeight(footerHeight + 40, 10, footer);
     rotateChevron(180);
 });
 footer.addEventListener("mouseleave", () => {
