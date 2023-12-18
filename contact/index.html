@@ -60,12 +60,23 @@
             </nav>
             <!-- Page content -->
             <div id="main-content" class="row overflow-auto">
-                <div class="col container-fluid">
+                <div class="col-md-3 col-sm-12 borderRight-md" id="contactInfo">
+                    <p class="mx-auto">
+                        Got any questions?<br />
+                        Send me an email or contact me on LinkedIn
+                    </p>
+                </div>
+                <div id="contactContainer" class="col-md-9 col-sm-12">
                     <div class="row">
                         <a
                             href=""
-                            class="contactLink mx-auto col-xs-12 col-md-6 col-lg-3"
+                            class="contactLink mx-auto col-xs-12 col-md-6 col-lg-5"
                             id="mailLink"
+                        >
+                            <i
+                                class="bi bi-envelope"
+                                style="margin-right: 5px"
+                            ></i
                             >Use a browser with JavaScript support to access
                             email address
                         </a>
@@ -74,8 +85,13 @@
                         <a
                             href="https://www.linkedin.com/in/benjamin-robertson-185a18215"
                             target="_blank"
-                            class="contactLink mx-auto col-xs-12 col-md-6 col-lg-3"
+                            class="contactLink mx-auto col-xs-12 col-md-6 col-lg-5"
                             id="linkedInLink"
+                        >
+                            <i
+                                class="bi bi-linkedin"
+                                style="margin-right: 5px"
+                            ></i
                             >Reach me on LinkedIn
                         </a>
                     </div>
@@ -94,13 +110,12 @@
         <!-- Obfuscate Script -->
         <script>
             // Do not include email address if JS not enabled
-            let mail =
-                "JiMxMDk7JiMwOTc7JiMxMDU7JiMxMDg7JiMxMTY7JiMxMTE7OiYjMDk4OyYjMTAxOyYjMTEwOyYjMDQ2OyYjMTE0OyYjMTExOyYjMDk4OyYjMTAxOyYjMTE0OyYjMTE2OyYjMTE1OyYjMTExOyYjMTEwOyYjMDQ4OyYjMDUyOyYjMDY0OyYjMTAzOyYjMTA5OyYjMDk3OyYjMTA1OyYjMTA4OyYjMDQ2OyYjMDk5OyYjMTExOyYjMTA5Ow===";
             let mailElement = document.getElementById("mailLink");
             mailElement.href = atob(
                 "bWFpbHRvOmJlbi5yb2JlcnRzb24wNEBnbWFpbC5jb20="
             );
-            mailElement.innerHTML = "Send me an email";
+            mailElement.innerHTML =
+                "<i class='bi bi-envelope' style='margin-right: 5px; display: inline;'></i>Send me an email";
         </script>
         <!-- Bootstrap Import -->
         <script
