@@ -21,21 +21,21 @@ function rotateChevron(targetRot) {
         targetRot += 360;
     }
     // speed of rotation
-    const increment = 15;
+    const increment = 10;
     function frame() {
         // if target reached, end animation, else increment rotation
         if (elementRot == targetRot) {
             while (elementRot >= 360) {
                 elementRot -= 360;
             }
-            chevron.style.rotate = elementRot + "deg";
+            chevron.style.rotate = "1 0 0 " + elementRot + "deg";
             clearInterval(id);
         } else {
             elementRot += increment;
             if (elementRot > targetRot) {
                 elementRot = targetRot;
             }
-            chevron.style.rotate = elementRot + "deg";
+            chevron.style.rotate = "1 0 0 " + elementRot + "deg";
         }
     }
 }
