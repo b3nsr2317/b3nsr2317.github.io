@@ -89,6 +89,30 @@ a:active {
     width: 100%;
 }
 
+/* Home */
+
+#aboutMe,
+#portraitPhotoContainer {
+    padding-top: 50px;
+}
+
+#portraitPhotoContainer {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#portraitPhoto {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #222266;
+}
+
+@media screen and (max-width: 767px) {
+    #portraitPhotoContainer {
+        visibility: hidden;
+    }
+}
+
 /* Contact Me */
 
 #contactContainer,
