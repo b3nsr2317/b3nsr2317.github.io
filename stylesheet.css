@@ -113,6 +113,34 @@ a:active {
     }
 }
 
+/* Projects */
+
+.project-container {
+    padding: 50px;
+    height: 10vh;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.project {
+    border-radius: 10px;
+    background-color: #4444ce;
+    color: #dfdfff;
+    text-decoration: none;
+    text-align: center;
+    padding: 50px 40%;
+    margin-bottom: 25px;
+}
+
+.project:hover {
+    color: #dfdfff;
+    background-color: #2a2aa1;
+    text-decoration: underline;
+    text-decoration-color: #222266;
+    text-decoration-thickness: 2px;    
+    cursor: pointer;
+}
+
 /* Contact Me */
 
 #contactContainer,
