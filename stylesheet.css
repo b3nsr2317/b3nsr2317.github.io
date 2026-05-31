@@ -131,6 +131,10 @@ a:active {
     text-align: center;
 }
 
+.project-container a {
+    text-decoration: none;
+}
+
 .project {
     border-radius: 10px;
     background-color: #4444ce;
