@@ -1,8 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-5555LPEW0W"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-5555LPEW0W");
+        </script>
         <!-- Font and Bootstrap Import -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -112,7 +126,7 @@
             // Do not include email address if JS not enabled
             let mailElement = document.getElementById("mailLink");
             mailElement.href = atob(
-                "bWFpbHRvOmJlbi5yb2JlcnRzb24wNEBnbWFpbC5jb20="
+                "bWFpbHRvOmJlbi5yb2JlcnRzb24wNEBnbWFpbC5jb20=",
             );
             mailElement.innerHTML =
                 "<i class='bi bi-envelope' style='margin-right: 5px; display: inline;'></i>Send me an email";
